@@ -1,3 +1,7 @@
-*{
-    box-sizing: border-box;
-}
+@import "grid";
+@import "fonts";
+@import "interface";
+@import "mixins";
+@import "variables";
+@import "blocks/navbar";
+@import "blocks/hero";

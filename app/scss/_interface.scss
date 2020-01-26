@@ -1,0 +1,13 @@
+body{
+    @include light;
+}
+.button{
+    width: 240px;
+    height: 61px;
+    background-color: #507fe1;
+    color: #ffffff;
+    @include bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+}

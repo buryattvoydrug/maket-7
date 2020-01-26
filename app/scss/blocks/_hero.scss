@@ -1,0 +1,20 @@
+.hero{
+    background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat center top 82px;
+    background-size: contain;
+    padding: 196px 0 273px;
+    .hero__title{
+        color: #252525;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .hero__subtitle{
+        display: block;
+        @include bold;
+        color: #121212;
+        font-size: 30px;
+        margin: 35px 0 65px;
+        sup{
+            font-size: 18px;
+        }
+    }
+}

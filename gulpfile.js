@@ -31,7 +31,7 @@ function browserReload (){
     browserSync.reload();
 }
 function watch_(){
-    gulp.watch('app/scss/style.scss', sass_);
+    gulp.watch('app/scss/**/*.scss', sass_);
     gulp.watch('app/*.html', browserReload);
     gulp.watch('app/**/*.php', browserReload);
     gulp.watch('app/**/*.js', browserReload);
@@ -45,3 +45,4 @@ function browserSync_(){
     });
 }
 gulp.task('default', gulp.parallel(browserSync_, watch_));
+
