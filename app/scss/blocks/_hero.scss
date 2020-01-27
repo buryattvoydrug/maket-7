@@ -1,6 +1,6 @@
 .hero{
     background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat center top 82px;
-    background-size: contain;
+    background-size: cover;
     padding: 196px 0 273px;
     .hero__title{
         color: #252525;
@@ -18,3 +18,23 @@
         }
     }
 }
+@media (min-width: 992px)and(max-width:1199px){
+    .hero{
+        background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat right -600px top 82px;
+    }
+}
+@media (min-width: 769px)and(max-width: 991px){
+    .hero{
+        background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat right -700px top 82px;
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        background: #f1f1f1 url("../images/hero/hero-xs-bg.jpg") no-repeat right -312px top 82px;
+        padding-top: 140px;
+        .hero__subtitle{
+            margin-bottom: 170px;
+        }
+    }
+}
+
