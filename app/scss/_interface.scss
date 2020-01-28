@@ -11,3 +11,44 @@ body{
     text-transform: uppercase;
     border: none;
 }
+.bg-section{
+    background-color: $bg-section-color;
+}
+.navbar,
+.menu{
+    z-index: 1;
+}
+sup{
+    z-index: 0;
+}
+.input[type=text]{
+    height: 80px;
+    width: 300px;
+    border: 1px solid #dddddd;
+    border-right: none;
+    background-color: #ffffff;
+    padding-left: 31px;
+}
+.input[type=checkbox]{
+    display: none;
+}
+.input[type=checkbox]:checked+label:before{
+        background: #507fe1;
+}
+.checkbox__label{
+    display: flex;
+    align-items: center;
+    margin: 25px 42px 25px 0;
+}
+.checkbox__label:hover{
+    cursor: pointer;
+}
+.checkbox__label:before{
+    margin-right: 19px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
