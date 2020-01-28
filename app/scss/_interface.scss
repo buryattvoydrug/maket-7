@@ -1,6 +1,19 @@
 body{
     @include light;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+}
+h2.section__title{
+    margin: 97px 0 100px;
+    @include bold;
+    font-size: 30px;
+    text-align: center;
+}
+br.dn{
+    display: none;
+}
 .button{
     width: 240px;
     height: 61px;
