@@ -10,6 +10,7 @@ h2.section__title{
     @include bold;
     font-size: 30px;
     text-align: center;
+    text-transform: uppercase;
 }
 br.dn{
     display: none;
@@ -23,6 +24,7 @@ br.dn{
     font-size: 15px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 .bg-section{
     background-color: $bg-section-color;
