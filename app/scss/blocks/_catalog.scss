@@ -1,0 +1,91 @@
+.catalog div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 104px;
+    h2{
+        padding-top: 3px;
+        margin-bottom: 92px;
+    }
+    .catalog__button{
+        @include inputbutton(70px,348px);
+        margin: 33px 0 21px;
+        font-size: 16px;
+    }
+    .catalog__button-description{
+        font-size: 16px;
+    }
+}
+.catalog-block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .catalog__item{
+        width: 570px;
+        height: 130px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+        .catalog-item__category,
+        .catalog-item__buttons{
+            position: absolute;
+        }
+        .catalog-item__category{
+            display: block;
+            top: 0;
+            left:0;
+            background-color: #507fe1;
+            opacity: 0.6;
+            margin: 10px;
+            padding: 8px 10px 8px 15px;
+            color: #ffffff;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .catalog-item__buttons{
+            display: flex;
+            bottom: 0;
+            right: 0;
+            .fitting__button{
+                width: 140px;
+                height: 29px;
+                background-color: #ffffff;
+                border: none;
+                color: #6a99e9;
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+            .order__button{
+                width: 75px;
+                height: 29px;
+                color: #ffffff;
+                border: none;
+                background-color: #6a99e9;
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+            .like__button{
+                width: 29px;
+                height: 29px;
+                background-color: #417cde;
+                border: none;
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .catalog-block{
+        justify-content: center;
+    }
+}
+@media (max-width: 570px){
+    .catalog-block{
+        .catalog__item{
+            width: 95vw;
+            overflow-x: hidden;
+        }
+    }
+    .catalog__button{
+        width: 95vw !important;
+    }
+}

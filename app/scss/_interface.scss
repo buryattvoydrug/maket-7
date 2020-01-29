@@ -1,6 +1,20 @@
 body{
     @include light;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+}
+h2.section__title{
+    margin: 97px 0 100px;
+    @include bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+br.dn{
+    display: none;
+}
 .button{
     width: 240px;
     height: 61px;
@@ -10,4 +24,46 @@ body{
     font-size: 15px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
+}
+.bg-section{
+    background-color: $bg-section-color;
+}
+.navbar,
+.menu{
+    z-index: 1;
+}
+sup{
+    z-index: 0;
+}
+.input[type=text]{
+    height: 80px;
+    width: 300px;
+    border: 1px solid #dddddd;
+    border-right: none;
+    background-color: #ffffff;
+    padding-left: 31px;
+}
+.input[type=checkbox]{
+    display: none;
+}
+.input[type=checkbox]:checked+label:before{
+        background: #507fe1;
+}
+.checkbox__label{
+    display: flex;
+    align-items: center;
+    margin: 25px 42px 25px 0;
+}
+.checkbox__label:hover{
+    cursor: pointer;
+}
+.checkbox__label:before{
+    margin-right: 19px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
 }

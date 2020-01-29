@@ -1,7 +1,7 @@
 .hero{
     background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat center top 82px;
-    background-size: cover;
-    padding: 196px 0 273px;
+    background-size: contain;
+    padding: 196px 0 375px;
     .hero__title{
         color: #252525;
         font-size: 30px;
@@ -32,9 +32,7 @@
     .hero{
         background: #f1f1f1 url("../images/hero/hero-xs-bg.jpg") no-repeat right -312px top 82px;
         padding-top: 140px;
-        .hero__subtitle{
-            margin-bottom: 170px;
-        }
+
     }
 }
 
