@@ -1,0 +1,28 @@
+.about{
+    padding-bottom: 68px;
+    .about-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -33px;
+        .about-text{
+            max-width: 525px;
+            font-size: 20px;
+            line-height: 31.5px;
+        }
+        .about__text{
+            margin-bottom: 30px;
+        }
+        .about__img{
+            margin-top: 27px;
+            margin-right: 73px;
+        }
+    }
+}
+@media (max-width: 995px){
+    .about{
+         .about__img{
+            margin-right: 0 !important;
+        }
+    }
+}

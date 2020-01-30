@@ -32,6 +32,28 @@
         @include inputbutton(80px,300px);
     }
 }
+.cheeper-offer{
+    padding: 0 0 10px 0;
+    background: none;
+    .offer__block{
+        background:#fff url('../../images/offer/cheeper-offer-bg.png') no-repeat right 0;
+        margin-top: -177px;
+        padding: 57px 190px 55px 70px;
+        .offer__subtitle{
+            margin: 22px 0 43px;
+            max-width: 835px;
+        }
+        .form-row{
+            margin-top: 30px;
+            align-items: center;
+            span{
+                color: #596164;
+                font-size: 17px;
+                padding-left: 45px;
+            }
+        }
+    }
+}
 @media (min-width: 992px) and (max-width:1199px){
     .offer{
         .offer__block{
