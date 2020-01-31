@@ -6,6 +6,7 @@
     <title>Фабрика Skinali</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
     <header class="header">
@@ -396,6 +397,31 @@
                 </div>
             </div>
         </section>
+        <section class="bef-aft section">
+            <div class="container">
+                <h2 class="section__title">ДО И ПОСЛЕ</h2>
+                <div class="bef-aft-slider">
+                    <div class="bef-aft-slider__item">
+                        <div class="before-after">
+                            <img src="images/before-after/before-after-1.jpg" alt="">
+                            <img src="images/before-after/before-after-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bef-aft-slider__item">
+                        <div class="before-after">
+                            <img src="images/before-after/before-after-3.jpg" alt="">
+                            <img src="images/before-after/before-after-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bef-aft-slider__item">
+                        <div class="before-after">
+                            <img src="images/before-after/before-after-5.jpg" alt="">
+                            <img src="images/before-after/before-after-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="reviews section bg-section">
             <div class="container">
                 <h2 class="section__title">Отзывы наших клиентов</h2>
@@ -535,5 +561,21 @@
         </div>
     </footer>
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=2552"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $(".before-after").twentytwenty({
+                before_label: 'БЕЗ СКИНАЛИ', // Set a custom before label
+                after_label: 'С СКИНАЛИ', // Set a custom after label
+            });
+            $('.bef-aft-slider').slick({
+                draggable: false,
+                dots: true,
+            });
+        });
+    </script>
 </body>
 </html>
