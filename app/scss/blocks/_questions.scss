@@ -1,0 +1,32 @@
+.questions{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 51px 0 55px;
+    }
+    .questions__title{
+        font-size: 30px;
+        padding: 0 40px 0 0px;
+    }
+    .questions__link{
+        @include bold;
+        color: #507fe1;
+        font-size: 24px;
+        padding: 0 20px 0 20px;
+    }
+}
+@media (max-width: 650px){
+    .questions{
+        .container{
+            justify-content: space-around;
+        }
+        .questions__title{
+            padding: 0 10px;
+        }
+        .questions__link{
+            padding: 0 10px;
+        }
+    }
+}

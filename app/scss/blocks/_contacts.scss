@@ -1,0 +1,22 @@
+.contacts{
+    .section__title{
+        margin: 93px 0 92px;
+    }
+    .contacts-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 20px;
+        .contact__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 46px;
+            .contact__contact{
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
