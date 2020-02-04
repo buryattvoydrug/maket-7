@@ -9,3 +9,14 @@
         }
     }
 }
+
+@media (max-width: 900px){
+    .slick-arrow{
+        display: none !important;
+    }
+}
+@media (max-width: 767px){
+    .bef-aft{
+        display: none !important;
+    }
+}

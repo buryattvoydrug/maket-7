@@ -44,6 +44,9 @@
         }
         .catalog-item__buttons{
             display: flex;
+            transition: 0.2s;
+            opacity: 0;
+            transform: translateY(100%);
             bottom: 0;
             right: 0;
             .fitting__button{
@@ -54,7 +57,9 @@
                 color: #6a99e9;
                 font-size: 11px;
                 text-transform: uppercase;
+                cursor: pointer;
             }
+
             .order__button{
                 width: 75px;
                 height: 29px;
@@ -63,14 +68,22 @@
                 background-color: #6a99e9;
                 font-size: 11px;
                 text-transform: uppercase;
+                cursor: pointer;
             }
+
             .like__button{
                 width: 29px;
                 height: 29px;
                 background-color: #417cde;
                 border: none;
+                cursor: pointer;
             }
+
         }
+    }
+    .catalog__item:hover .catalog-item__buttons{
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 @media (max-width: 1200px){

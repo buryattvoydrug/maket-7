@@ -1,4 +1,9 @@
+a{
+    text-decoration: none;
+    color: #fff;
+}
 .navbar{
+    z-index: 5;
     position: fixed;
     left: 0;
     top: 0;
@@ -28,6 +33,12 @@
             margin: 2.5px 0;
             background-color: #5381e2;
         }
+    }
+    .menu-button:hover{
+        cursor: pointer
+    }
+    .menu-button:focus{
+        outline: none;
     }
     .logo{
         display: flex;
@@ -81,7 +92,8 @@
         text-transform: uppercase;
     }
 }
-.menu{
+.header{
+    .menu{
         position: fixed;
         top: 82px;
         width: 100%;
@@ -91,9 +103,6 @@
         z-index: 0;
         transition: 0.2s;
         transform: translateY(-100%);
-        .menu_active{
-            transform: translateY(0);
-        }
         .menu__nav{
             display: flex;
             align-items: center;
@@ -106,6 +115,11 @@
             line-height: 25px;
             text-transform: uppercase;
         }
+    }
+    .menu_active{
+        transform: translateY(0%);
+        z-index: 10;
+    }
 }
 @media (min-width: 1200px){
     .navbar__mobile,

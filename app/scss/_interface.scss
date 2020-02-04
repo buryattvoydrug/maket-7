@@ -15,6 +15,9 @@ h2.section__title{
 br.dn{
     display: none;
 }
+a:visited{
+    color: inherit;
+}
 .button{
     width: 240px;
     height: 61px;
@@ -36,7 +39,8 @@ br.dn{
 sup{
     z-index: 0;
 }
-.input[type=text]{
+.input[type=text],
+.input[type=tel]{
     height: 80px;
     width: 300px;
     border: 1px solid #dddddd;
